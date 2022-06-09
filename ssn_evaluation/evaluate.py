@@ -1,15 +1,15 @@
 import torch
 import os
 import numpy as np
-from evaluator import Evaluator
-from running_metrics.running_confusion_matrix import RunningConfusionMatrix
-from running_metrics.running_probability_distribution import RunningDistributionStatistics
-from running_metrics.samplers import LowRankMultivariateNormalRandomSampler, \
+from ssn_evaluation.evaluator import Evaluator
+from ssn_evaluation.running_metrics.running_confusion_matrix import RunningConfusionMatrix
+from ssn_evaluation.running_metrics.running_probability_distribution import RunningDistributionStatistics
+from ssn_evaluation.running_metrics.samplers import LowRankMultivariateNormalRandomSampler, \
     LowRankMultivariateNormalClassWeightedRangeSampler, CategoricalSampler, CategoricalDeterministicSampler
-from metrics.overlap_metrics import OverlapMetrics
-from visualisation.report import report
-from visualisation.slice_visualizer import MostLoadedSliceVisualiser
-from metrics.distribution_statistics import DistributionStatistics
+from ssn_evaluation.metrics.overlap_metrics import OverlapMetrics
+from ssn_evaluation.visualisation.report import report
+from ssn_evaluation.visualisation.slice_visualizer import MostLoadedSliceVisualiser
+from ssn_evaluation.metrics.distribution_statistics import DistributionStatistics
 import argparse
 
 class_names = ['background', 'non-enhancing tumor', 'oedema', 'enhancing tumor']

@@ -1,7 +1,7 @@
 from running_metrics.running_probability_distribution import RunningDistributionStatistics
 import numpy as np
-from utils.stats import compute_metrics_from_cm, iqr_v2
-from metrics.overlap_metrics import merge_cm_classes
+from ssn_evaluation.utils.stats import compute_metrics_from_cm, iqr_v2
+from ssn_evaluation.metrics.overlap_metrics import merge_cm_classes
 from tabulate import tabulate
 import matplotlib.pyplot as plt
 from utils.stats import nanstderr

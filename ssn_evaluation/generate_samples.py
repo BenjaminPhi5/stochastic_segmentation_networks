@@ -1,11 +1,11 @@
 import torch
 import os
 import numpy as np
-from evaluator import Evaluator
-from running_metrics.running_sample_generator import RunningSampleGenerator
-from running_metrics.samplers import LowRankMultivariateNormalRandomSampler, \
+from ssn_evaluation.evaluator import Evaluator
+from ssn_evaluation.running_metrics.running_sample_generator import RunningSampleGenerator
+from ssn_evaluation.running_metrics.samplers import LowRankMultivariateNormalRandomSampler, \
     LowRankMultivariateNormalClassWeightedRangeSampler, CategoricalSampler
-from visualisation.slice_visualizer import MostLoadedSliceVisualiser
+from ssn_evaluation.visualisation.slice_visualizer import MostLoadedSliceVisualiser
 import argparse
 
 class_names = ['background', 'non-enhancing tumor', 'oedema', 'enhancing tumor']
